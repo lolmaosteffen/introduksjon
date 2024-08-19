@@ -7,9 +7,12 @@
     <title>Introduksjon</title>
     <style>
         .container {
-            margin-left: 20px;
-            margin-top: 10px;
+            margin: 20px;
             border: 1px solid rgb(0, 0, 0);
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
         .header {
@@ -19,7 +22,6 @@
         .bilde {
             width: 150px;
             height: auto;
-            margin-left: 650px;
         }
 
         .randomize-button {
@@ -35,21 +37,22 @@
     <h2 class="header">Introduksjon</h2>
     <div class="container">
         <div>
-            <h3 style="margin-left: 5px;" class="hei" id="Hobbies" onclick="showHobbies()">Hei, jeg heter Steffen. Mine
-                hobbyer er:</h3>
+            <h3 class="hei">Hei, jeg heter Steffen. Mine hobbyer er:</h3>
             <ul>
                 <li>Gaming</li>
                 <li>Trening</li>
             </ul>
-            <h3 style="margin-left: 5px;">Mine nøkkelkompetanser er:</h3>
+            <h3>Mine nøkkelkompetanser er:</h3>
             <ul>
                 <li></li>
+                <li></li>
+                <li></li>
             </ul>
+            <button class="randomize-button" onclick="randomizeBackgroundColor()">Click me!</button>
         </div>
         <div>
             <img class="bilde" src="bilder/1524147_4299973754782_5713754611128658697_o.jpg" alt="">
         </div>
-        <div><button class="randomize-button" onclick="randomizeBackgroundColor()">Click me!</button></div>
     </div>
     <script>
         function randomizeBackgroundColor() {
