@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduksjon</title>
+    <style>
+        .container {
+            margin-left: 20px;
+            margin-top: 10px;
+            border: 1px solid rgb(0, 0, 0);
+        }
+
+        .header {
+            margin-left: 10px;
+        }
+
+        .bilde {
+            width: 150px;
+            height: auto;
+            margin-left: 650px;
+        }
+
+        .randomize-button {
+            margin: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 class="header">Introduksjon</h2>
+    <div class="container">
+        <div>
+            <h3 style="margin-left: 5px;" class="hei" id="Hobbies" onclick="showHobbies()">Hei, jeg heter Steffen. Mine
+                hobbyer er:</h3>
+            <ul>
+                <li>Gaming</li>
+                <li>Trening</li>
+            </ul>
+            <h3 style="margin-left: 5px;">Mine nøkkelkompetanser er:</h3>
+            <ul>
+                <li></li>
+            </ul>
+        </div>
+        <div>
+            <img class="bilde" src="bilder/1524147_4299973754782_5713754611128658697_o.jpg" alt="">
+        </div>
+        <div><button class="randomize-button" onclick="randomizeBackgroundColor()">Click me!</button></div>
+    </div>
+    <script>
+        function randomizeBackgroundColor() {
+            const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+            document.body.style.backgroundColor = randomColor;
+        }
+    </script>
+</body>
+
+</html>
